@@ -1,7 +1,8 @@
 import React from "react";
+import CartWidget from "./CartWidget";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 
-import {CartWidget} from "./components/CartWidget.jsx";
+
 export default function NavBar() {
 
   
@@ -24,10 +25,12 @@ export default function NavBar() {
         </NavDropdown>
         
         <Nav.Link href="#link">Link</Nav.Link>
-        <p><CartWidget></CartWidget></p>
+        
+        
       </Nav>
     </Navbar.Collapse>
   </Container>
+  <Nav.Link style={{fontSize:"2rem", color:"black"}}><CartWidget></CartWidget></Nav.Link>
 </Navbar>
     </>
 
